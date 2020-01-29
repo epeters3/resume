@@ -1,0 +1,45 @@
+[
+  {
+    "id": "grad-researcher",
+    "title": "Graduate Research Assistant",
+    "inst": "Applied Machine Learning lab, BYU",
+    "city": "Provo",
+    "state": "Utah",
+    "sdate": "March 2019",
+    "edate": "Present",
+    "bullets": [
+      "Generating diverse machine learning pipeline data & analyzing for knowledge discovery",
+      "Contributing to open-source automated machine learning software products and platform"
+    ]
+  },
+  {
+    "id": "stack-team",
+    "title": "Software Engineer I",
+    "inst": "Stack Team, The Church of Jesus Christ of Latter-day Saints",
+    "city": "Riverton",
+    "state": "Utah",
+    "sdate": "September 2017",
+    "edate": "August 2018",
+    "bullets": [
+      "Provided training to front-end web developers",
+      "Presented to developers on new technologies and best practices in the front-end space",
+      "Assisted in building 3 web applications using Spring Boot, React.js, and Node.js - acted as lead developer on one project"
+    ]
+  },
+  {
+    "id": "ihc",
+    "title": "Machine Learning Intern",
+    "inst": "Data Semantics Team, Intermountain Healthcare",
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "sdate": "June 2016",
+    "edate": "August 2016",
+    "bullets": [
+      "Built NLP+Logistic Regression re-ranking model that improves search engine relevancy by 10% - 20%",
+      "Created R services for interfacing with Apache Solr that retrain algorithm and re-rank search results",
+      "Built custom indexes in Apache Solr for use in search engine application",
+      "Used Natural Language Processing to quantify text-based data",
+      "Interviewed, researched, and conducted data analysis to learn natural features of team’s data"
+    ]
+  }
+]
