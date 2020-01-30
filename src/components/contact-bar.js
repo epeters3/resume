@@ -15,10 +15,9 @@ const Bar = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0.5rem;
 `;
 
-const Icon = styled.img`
+export const Icon = styled.img`
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
