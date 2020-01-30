@@ -10,6 +10,7 @@ const Callout = styled.p`
   position: relative;
   background-color: whitesmoke;
   border-radius: 0.5rem;
+  border: 0.25rem solid whitesmoke;
   padding: 1rem;
   font-style: italic;
   font-size: 1.1rem;

@@ -11,12 +11,12 @@ const Foot = styled.footer`
   align-items: center;
   padding: 1rem 2rem;
   font-size: 0.75rem;
-  font-family: Consolas;
+  font-family: Consolas, monaco, monospace;
 `;
 
 const Footer = () => (
   <Foot>
-    <span>Coded in React.js</span>
+    <span>This resume was coded in React.js</span>
     <img
       src={reactIcon}
       alt="React.js logo"

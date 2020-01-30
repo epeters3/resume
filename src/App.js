@@ -3,11 +3,13 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 
 import ExperienceSection from "./components/experience";
+import EducationSection from "./components/education"
 import Header from "./components/header";
 import ContactBar from "./components/contact-bar";
 import Footer from "./components/footer";
 
 import experiences from "./data/experiences.json";
+import educations from "./data/education.json";
 
 const theme = {
   dark: "#262832",
@@ -32,12 +34,13 @@ function App() {
         <Main>
           <Header />
           <ExperienceSection experiences={experiences} blacklistIds={[]} />
+          <EducationSection educations={educations} blacklistIds={["slcc"]} />
           <hr></hr>
           <ContactBar />
         </Main>
         <Footer />
       </Page>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
 
