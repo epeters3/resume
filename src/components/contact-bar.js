@@ -26,10 +26,13 @@ const contactItems = [
 ];
 
 const Link = styled.a`
-  cursor: pointer;
+  cursor: ${p => (p.href ? "pointer" : "default")};
   font-style: italic;
   text-decoration: none;
   color: black;
+  &:hover {
+    text-decoration: ${p => (p.href ? "underline" : "")};
+  }
 `;
 
 const Bar = styled.div`

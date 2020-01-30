@@ -4,7 +4,7 @@ import styled from "styled-components";
 import reactIcon from "../icons/react.png";
 
 const Foot = styled.footer`
-  background-color: darkslategrey;
+  background-color: ${p => p.theme.dark};
   color: white;
   display: flex;
   justify-content: flex-end;
