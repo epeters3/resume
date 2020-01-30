@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 import ExperienceSection from "./components/experience";
 import Header from "./components/header";
@@ -7,6 +8,12 @@ import ContactBar from "./components/contact-bar";
 import Footer from "./components/footer";
 
 import experiences from "./data/experiences.json";
+
+const theme = {
+  dark: "#262832",
+  lessDark: "#313440",
+  hFont: "'Dosis', sans-serif"
+};
 
 const Page = styled.div`
   max-width: 800px;
@@ -20,15 +27,17 @@ const Main = styled.main`
 
 function App() {
   return (
-    <Page>
-      <Main>
-        <Header />
-        <ExperienceSection experiences={experiences} blacklistIds={[]} />
-        <hr></hr>
-        <ContactBar />
-      </Main>
-      <Footer />
-    </Page>
+    <ThemeProvider theme={theme}>
+      <Page>
+        <Main>
+          <Header />
+          <ExperienceSection experiences={experiences} blacklistIds={[]} />
+          <hr></hr>
+          <ContactBar />
+        </Main>
+        <Footer />
+      </Page>
+    </ThemeProvider>
   );
 }
 
