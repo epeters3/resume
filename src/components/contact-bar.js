@@ -42,16 +42,22 @@ const Bar = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+  width: ${p => p.theme.size.lg};
+  height: ${p => p.theme.size.lg};
+  margin-right: ${p => p.theme.size.sm};
+`;
+
+const CItem = styled.span`
+  display: flex;
+  align-items: center;
+  margin: ${p => p.theme.size.sm};
 `;
 
 const ContactItem = ({ src, alt, value, href }) => (
-  <span style={{ display: "flex", alignItems: "center", margin: "0.5rem" }}>
+  <CItem>
     <Icon src={src} alt={alt} />
     <Link href={href}>{value}</Link>
-  </span>
+  </CItem>
 );
 
 const ContactBar = () => (

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Code from "./common/code"
+
 import reactIcon from "../icons/react.png";
 
 const Foot = styled.footer`
@@ -9,18 +11,22 @@ const Foot = styled.footer`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1rem 2rem;
-  font-size: 0.75rem;
-  font-family: Consolas;
+  padding: ${p => p.theme.size.md} ${p => p.theme.size.xl};
+`;
+
+const Img = styled.img`
+  margin-left: ${p => p.theme.size.sm};
+  height: ${p => p.theme.size.lg};
+  width: ${p => p.theme.size.lg};
+
 `;
 
 const Footer = () => (
   <Foot>
-    <span>Coded in React.js</span>
-    <img
+    <Code>This resume was coded in React.js</Code>
+    <Img
       src={reactIcon}
       alt="React.js logo"
-      style={{ marginLeft: "0.5rem", height: "1.5rem", width: "1.5rem" }}
     />
   </Foot>
 );

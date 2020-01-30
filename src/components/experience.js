@@ -7,16 +7,16 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h4`
-  margin-bottom: 0.5rem;
+  margin-bottom: ${p => p.theme.size.sm};
   color: ${p => p.theme.lessDark};
 `;
 
 const LocDate = styled.p`
-  margin: 0.5rem 0;
+  margin: ${p => p.theme.size.sm} 0;
 `;
 
 const Ul = styled.ul`
-  margin-top: 0.5rem;
+  margin-top: ${p => p.theme.size.sm};
 `;
 
 const Experience = ({ title, inst, city, state, sdate, edate, bullets }) => (
