@@ -7,12 +7,12 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h4`
-  margin-bottom: 0.5rem;
+  margin-bottom: ${p => p.theme.size.sm};
   color: ${p => p.theme.lessDark};
 `;
 
 const Ul = styled.ul`
-  margin-top: 0.5rem;
+  margin-top: ${p => p.theme.size.sm};
 `;
 
 const Education = ({ degree, major, gpa, gdate, inst, bullets }) => (
