@@ -6,10 +6,31 @@ import email from "../icons/email.png";
 import github from "../icons/github.png";
 
 const contactItems = [
-  { src: linkedin, alt: "LinkedIn logo", value: "@evanpeterson17" },
-  { src: email, alt: "Email icon", value: "evanpeterson17@gmail.com" },
-  { src: github, alt: "Github logo", value: "@epeters3" }
+  {
+    src: linkedin,
+    alt: "LinkedIn logo",
+    value: "@evanpeterson17",
+    href: "https://www.linkedin.com/in/evanpeterson17/"
+  },
+  {
+    src: email,
+    alt: "Email icon",
+    value: "evanpeterson17@gmail.com"
+  },
+  {
+    src: github,
+    alt: "Github logo",
+    value: "@epeters3",
+    href: "https://www.github.com/epeters3"
+  }
 ];
+
+const Link = styled.a`
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+`;
 
 const Bar = styled.div`
   display: flex;
@@ -23,17 +44,17 @@ export const Icon = styled.img`
   margin-right: 0.5rem;
 `;
 
-const ContactItem = ({ src, alt, value }) => (
+const ContactItem = ({ src, alt, value, href }) => (
   <span style={{ display: "flex", alignItems: "center", margin: "0.5rem" }}>
     <Icon src={src} alt={alt} />
-    <i>{value}</i>
+    <Link href={href}>{value}</Link>
   </span>
 );
 
 const ContactBar = () => (
   <Bar>
     {contactItems.map(item => (
-      <ContactItem {...item} />
+      <ContactItem key={item.value} {...item} />
     ))}
   </Bar>
 );
