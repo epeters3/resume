@@ -18,7 +18,7 @@ const Ul = styled.ul`
 const Education = ({ degree, major, gpa, gdate, inst, bullets }) => (
     <div>
         <H3>
-            {degree} {major}, {inst}
+            {degree} {major}, {inst} - {gdate}
         </H3>
         <Ul>
             {bullets.map(bullet => (

@@ -7,7 +7,7 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h4`
-  margin-bottom: ${p => p.theme.size.sm};
+  margin-bottom: ${p => p.theme.size.xs};
   color: ${p => p.theme.lessDark};
 `;
 
