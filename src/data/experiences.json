@@ -23,7 +23,7 @@
     "bullets": [
       "Provided training to front-end web developers",
       "Presented to developers on new technologies and best practices in the front-end space",
-      "Assisted in building 3 web applications using Spring Boot, React.js, and Node.js - acted as lead developer on one project"
+      "Assisted in building 3 web applications using Spring Boot, React.js, and Node.js - acted as lead developer on last project"
     ]
   },
   {
@@ -35,11 +35,9 @@
     "sdate": "June 2016",
     "edate": "August 2016",
     "bullets": [
-      "Built NLP+Logistic Regression re-ranking model that improves search engine relevancy by 10% - 20%",
-      "Created R services for interfacing with Apache Solr that retrain algorithm and re-rank search results",
-      "Built custom indexes in Apache Solr for use in search engine application",
-      "Used Natural Language Processing to quantify text-based data",
-      "Interviewed, researched, and conducted data analysis to learn natural features of team’s data"
+      "Built machine learning model in R which interfaces with Apache Solr and re-ranks search results, improving search engine relevancy by 10% - 20%",
+      "Used natural language processing (NLP) to quantify text-based data",
+      "Interviewed, researched, and conducted data analysis to learn natural features of team’s data, presenting regularly to stakeholders"
     ]
   }
 ]

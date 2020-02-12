@@ -1,0 +1,29 @@
+{
+  "Languages": [
+    "Python",
+    "Javascript",
+    "Java",
+    "Julia",
+    "C#",
+    "Matlab",
+    "R",
+    "C++"
+  ],
+  "Platforms": [
+    "Scikit-Learn",
+    "SQL Server",
+    "MongoDB",
+    "Redis",
+    "Pytorch",
+    "Keras",
+    "Spring Boot",
+    "React.js"
+  ],
+  "Paradigms": [
+    "Machine Learning",
+    "Web Development",
+    "Data Analysis",
+    "Data Modeling",
+    "Deep Learning"
+  ]
+}

@@ -16,6 +16,7 @@ const Callout = styled.h3`
   font-weight: normal;
   margin: 0;
   display: inline-block;
+  box-shadow: 5px 5px 10px -1px rgba(184, 184, 184, 1);
   &:after {
     content: "";
     position: absolute;
@@ -31,8 +32,8 @@ const Header = () => (
   <header>
     <H1>Evan Peterson</H1>
     <Callout>
-      Seeking Opportunities to Build Products & Leadership in Data Science &
-      Machine Learning.
+      &quot;Seeking Opportunities to Build Products & Leadership in Data Science
+      & Machine Learning.&quot;
     </Callout>
   </header>
 );

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Code from "./common/code"
+import { Code } from "./common";
 
 import reactIcon from "../icons/react.png";
 
@@ -18,16 +18,12 @@ const Img = styled.img`
   margin-left: ${p => p.theme.size.sm};
   height: ${p => p.theme.size.lg};
   width: ${p => p.theme.size.lg};
-
 `;
 
 const Footer = () => (
   <Foot>
     <Code>This resume was coded in React.js</Code>
-    <Img
-      src={reactIcon}
-      alt="React.js logo"
-    />
+    <Img src={reactIcon} alt="React.js logo" />
   </Foot>
 );
 

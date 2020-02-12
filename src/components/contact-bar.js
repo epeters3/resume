@@ -28,11 +28,8 @@ const contactItems = [
 const Link = styled.a`
   cursor: ${p => (p.href ? "pointer" : "default")};
   font-style: italic;
-  text-decoration: none;
+  text-decoration: ${p => (p.href ? "underline" : "")};
   color: black;
-  &:hover {
-    text-decoration: ${p => (p.href ? "underline" : "")};
-  }
 `;
 
 const Bar = styled.div`

@@ -1,40 +1,40 @@
 [
-    {
-        "id": "byu",
-        "degree": "M.S.",
-        "major": "Computer Science",
-        "gpa": 4.00,
-        "gdate": "August, 2020",
-        "inst": "Brigham Young University",
-        "bullets": [
-            "Studying Data Science, Machine Learning, and working as a graduate research assistant in the Applied MachineLearning laboratory",
-            "Involved in Natural Language Processing, Information Retrieval, and Automated Machine Learning projects"
-        ]
-    },
-    {
-        "id": "usu",
-        "degree": "B.S.",
-        "major": "Management Information Systems",
-        "gpa": 3.96,
-        "gdate": "May, 2017",
-        "inst": "Utah State University",
-        "bullets": [
-            "2017 Huntsman School of Business Scholar of the Year Award",
-            "Dean’s list 2 times for academic achievement",
-            "USU Business Intelligence Research Group member",
-            "Big data analytics course teaching assistant"
-        ]
-    },
-    {
-        "id": "slcc",
-        "degree": "A.S.",
-        "major": "General Education",
-        "gpa": 3.97,
-        "gdate": "May, 2014",
-        "inst": "Salt Lake Community College",
-        "bullets": [
-            "President’s list 3 times for academic achievement",
-            "Peer writing advisor in the Student Writing Lab"
-        ]
-    }
+  {
+    "id": "byu",
+    "degree": "M.S.",
+    "major": "Computer Science",
+    "gpa": 4.0,
+    "gdate": "August 2020",
+    "inst": "Brigham Young University",
+    "bullets": [
+      "Studying Data Science, Machine Learning, and working as a graduate research assistant in the Applied MachineLearning laboratory",
+      "Involved in Natural Language Processing, Information Retrieval, and Automated Machine Learning projects"
+    ]
+  },
+  {
+    "id": "usu",
+    "degree": "B.S.",
+    "major": "Management Information Systems",
+    "gpa": 3.96,
+    "gdate": "May 2017",
+    "inst": "Utah State University",
+    "bullets": [
+      "2017 Huntsman School of Business Scholar of the Year Award",
+      "Dean’s list 2 times for academic achievement",
+      "USU Business Intelligence Research Group member - published paper in The Journal of Business Leadership Fall 2018",
+      "Big data analytics course teaching assistant"
+    ]
+  },
+  {
+    "id": "slcc",
+    "degree": "A.S.",
+    "major": "General Education",
+    "gpa": 3.97,
+    "gdate": "May 2014",
+    "inst": "Salt Lake Community College",
+    "bullets": [
+      "President’s list 3 times for academic achievement",
+      "Peer writing advisor in the Student Writing Lab"
+    ]
+  }
 ]

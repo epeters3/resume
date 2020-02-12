@@ -3,13 +3,16 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 
 import ExperienceSection from "./components/experience";
-import EducationSection from "./components/education"
+import EducationSection from "./components/education";
+import SkillsSection from "./components/skill";
 import Header from "./components/header";
 import ContactBar from "./components/contact-bar";
 import Footer from "./components/footer";
+import Split from "./components/split";
 
 import experiences from "./data/experiences.json";
 import educations from "./data/education.json";
+import skills from "./data/skills.json";
 
 const theme = {
   dark: "#262832",
@@ -25,13 +28,14 @@ const theme = {
 };
 
 const Page = styled.div`
-  max-width: 800px;
+  max-width: 900px;
   min-height: 100vh;
 `;
 
 const Main = styled.main`
   background-color: white;
-  padding: ${p => p.theme.size.lg} ${p => p.theme.size.xl} ${p => p.theme.size.md} ${p => p.theme.size.xl};
+  padding: ${p => p.theme.size.lg} ${p => p.theme.size.xl}
+    ${p => p.theme.size.md} ${p => p.theme.size.xl};
 `;
 
 function App() {
@@ -40,14 +44,22 @@ function App() {
       <Page>
         <Main>
           <Header />
-          <ExperienceSection experiences={experiences} blacklistIds={[]} />
-          <EducationSection educations={educations} blacklistIds={["slcc"]} />
+          <Split>
+            <div>
+              <ExperienceSection experiences={experiences} blacklistIds={[]} />
+              <EducationSection
+                educations={educations}
+                blacklistIds={["slcc"]}
+              />
+            </div>
+            <SkillsSection skills={skills} />
+          </Split>
           <hr></hr>
           <ContactBar />
         </Main>
         <Footer />
       </Page>
-    </ThemeProvider >
+    </ThemeProvider>
   );
 }
 

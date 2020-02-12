@@ -1,29 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const H2 = styled.h2`
-  color: ${p => p.theme.dark};
-  font-family: ${p => p.theme.hFont};
-`;
-
-const H3 = styled.h4`
-  margin-bottom: ${p => p.theme.size.xs};
-  color: ${p => p.theme.lessDark};
-`;
+import { H2, H4, Ul } from "./common";
 
 const LocDate = styled.p`
   margin: ${p => p.theme.size.sm} 0;
 `;
 
-const Ul = styled.ul`
-  margin-top: ${p => p.theme.size.sm};
-`;
-
 const Experience = ({ title, inst, city, state, sdate, edate, bullets }) => (
   <div>
-    <H3>
-      {title}, {inst}
-    </H3>
+    <H4>{title}</H4>
+    <span>, {inst}</span>
+
     <LocDate>
       {city}, {state}: {sdate} - {edate}
     </LocDate>
@@ -35,13 +23,13 @@ const Experience = ({ title, inst, city, state, sdate, edate, bullets }) => (
   </div>
 );
 
-const ExperienceSection = ({ experiences = [], blacklistIds = [] }) => (
+const ExperienceSection = ({ experiences, blacklistIds }) => (
   <div>
     <H2>Experience</H2>
     {experiences
       .filter(experience => !blacklistIds.includes(experience.id))
       .map(experience => (
-        <Experience {...experience} />
+        <Experience key={experience.id} {...experience} />
       ))}
   </div>
 );
