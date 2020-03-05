@@ -5,7 +5,7 @@
     "inst": "Applied Machine Learning lab, BYU",
     "city": "Provo",
     "state": "Utah",
-    "sdate": "March 2019",
+    "sdate": "2019-03-01",
     "edate": "Present",
     "bullets": [
       "Generating diverse machine learning pipeline data & analyzing for knowledge discovery",
@@ -18,8 +18,8 @@
     "inst": "Stack Team, The Church of Jesus Christ of Latter-day Saints",
     "city": "Riverton",
     "state": "Utah",
-    "sdate": "September 2017",
-    "edate": "August 2018",
+    "sdate": "2017-09-01",
+    "edate": "2018-08-01",
     "bullets": [
       "Provided training to front-end web developers",
       "Presented to developers on new technologies and best practices in the front-end space",
@@ -32,8 +32,8 @@
     "inst": "Data Semantics Team, Intermountain Healthcare",
     "city": "Salt Lake City",
     "state": "Utah",
-    "sdate": "June 2016",
-    "edate": "August 2016",
+    "sdate": "2016-06-01",
+    "edate": "2016-08-01",
     "bullets": [
       "Built machine learning model in R which interfaces with Apache Solr and re-ranks search results, improving search engine relevancy by 10% - 20%",
       "Used natural language processing (NLP) to quantify text-based data",

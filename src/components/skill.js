@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { H3 } from "./common";
+import { H2 } from "./common";
 
 const Container = styled.div`
   display: flex;
@@ -13,12 +13,12 @@ const Container = styled.div`
 `;
 
 const Skill = styled.span`
-  margin: ${p => p.theme.size.xs};
+  margin: 0 ${p => p.theme.size.xs} 0 0;
 `;
 
 const SkillGroup = ({ groupName, skillNames }) => (
   <>
-    <H3>{groupName}</H3>
+    <H2>{groupName}</H2>
     <Container>
       {skillNames.map(name => (
         <Skill key={name}>{name}</Skill>

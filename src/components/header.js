@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const H1 = styled.h1`
-  color: ${p => p.theme.dark};
-  font-family: ${p => p.theme.hFont};
-`;
+import { H1 } from "./common";
 
-const Callout = styled.h3`
+const Callout = styled.p`
   position: relative;
   background-color: whitesmoke;
   border-radius: ${p => p.theme.size.sm};
@@ -32,7 +29,7 @@ const Header = () => (
   <header>
     <H1>Evan Peterson</H1>
     <Callout>
-      &quot;Seeking Opportunities to Build Products & Leadership in Data Science
+      &quot;Seeking opportunities to build products & leadership in Data Science
       & Machine Learning.&quot;
     </Callout>
   </header>

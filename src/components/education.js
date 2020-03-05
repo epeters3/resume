@@ -1,22 +1,21 @@
 import React from "react";
 
-import { H2, H4, Ul } from "./common";
+import { H2, H4 } from "./common";
 
-const Education = ({ degree, major, gpa, gdate, inst, bullets }) => (
-  <div>
-    <H4>
-      {degree} {major}
-    </H4>
-    <span>
-      , {gdate} - {inst}, GPA: {gpa.toFixed(2)}
-    </span>
-    <Ul>
-      {bullets.map(bullet => (
-        <li key={bullet}>{bullet}</li>
-      ))}
-    </Ul>
-  </div>
-);
+const Education = ({ degree, major, gpa, gdate, inst, bullets }) => {
+  gdate = new Date(gdate).getFullYear();
+  return (
+    <div>
+      <H4>
+        {degree} {major}
+      </H4>
+      <span>
+        , {gdate} - {inst}, GPA: {gpa.toFixed(2)}
+      </span>
+      <p>{bullets.reduce((acc, bullet) => (acc += bullet + ". "), "")}</p>
+    </div>
+  );
+};
 
 const EducationSection = ({ educations = [], blacklistIds = [] }) => (
   <div>

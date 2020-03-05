@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import ExperienceSection from "./components/experience";
 import EducationSection from "./components/education";
 import SkillsSection from "./components/skill";
+import AcademicsSection from "./components/academic";
+import ProjectsSection from "./components/project";
 import Header from "./components/header";
 import ContactBar from "./components/contact-bar";
 import Footer from "./components/footer";
@@ -13,11 +15,12 @@ import Split from "./components/split";
 import experiences from "./data/experiences.json";
 import educations from "./data/education.json";
 import skills from "./data/skills.json";
+import academics from "./data/academics.json";
+import projects from "./data/projects.json";
 
 const theme = {
   dark: "#262832",
   lessDark: "#313440",
-  hFont: "'Dosis', sans-serif",
   size: {
     xs: "0.25rem",
     sm: "0.5rem",
@@ -27,8 +30,16 @@ const theme = {
   }
 };
 
+const show = {
+  experience: true,
+  education: true,
+  skills: true,
+  academics: true,
+  projects: true
+};
+
 const Page = styled.div`
-  max-width: 900px;
+  max-width: 950px;
   min-height: 100vh;
 `;
 
@@ -46,13 +57,24 @@ function App() {
           <Header />
           <Split>
             <div>
-              <ExperienceSection experiences={experiences} blacklistIds={[]} />
-              <EducationSection
-                educations={educations}
-                blacklistIds={["slcc"]}
-              />
+              {show.experience && (
+                <ExperienceSection
+                  experiences={experiences}
+                  blacklistIds={[]}
+                />
+              )}
+              {show.education && (
+                <EducationSection
+                  educations={educations}
+                  blacklistIds={["slcc"]}
+                />
+              )}
             </div>
-            <SkillsSection skills={skills} />
+            <div>
+              {show.skills && <SkillsSection skills={skills} />}
+              {show.academics && <AcademicsSection academics={academics} />}
+              {show.projects && <ProjectsSection projects={projects} />}
+            </div>
           </Split>
           <hr></hr>
           <ContactBar />

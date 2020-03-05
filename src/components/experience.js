@@ -1,27 +1,18 @@
 import React from "react";
-import styled from "styled-components";
 
-import { H2, H4, Ul } from "./common";
+import { H2, H3 } from "./common";
 
-const LocDate = styled.p`
-  margin: ${p => p.theme.size.sm} 0;
-`;
-
-const Experience = ({ title, inst, city, state, sdate, edate, bullets }) => (
-  <div>
-    <H4>{title}</H4>
-    <span>, {inst}</span>
-
-    <LocDate>
-      {city}, {state}: {sdate} - {edate}
-    </LocDate>
-    <Ul>
-      {bullets.map(bullet => (
-        <li key={bullet}>{bullet}</li>
-      ))}
-    </Ul>
-  </div>
-);
+const Experience = ({ title, inst, sdate, edate, bullets }) => {
+  sdate = new Date(sdate).getFullYear();
+  edate = edate === "Present" ? edate : new Date(edate).getFullYear();
+  return (
+    <div>
+      <H3>{title}</H3>
+      <b>{inst}</b> / <i>{sdate === edate ? edate : `${sdate} - ${edate}`}</i>
+      <p>{bullets.reduce((acc, bullet) => (acc += bullet + ". "), "")}</p>
+    </div>
+  );
+};
 
 const ExperienceSection = ({ experiences, blacklistIds }) => (
   <div>

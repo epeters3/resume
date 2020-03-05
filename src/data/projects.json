@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Lenovo PC International",
+    "descr": "With USU BI Group team, analyzed website click-through and conversion data to find correlation between customer conversion and page load times, and identify optimal page load times, potential revenue gain, and web pages of most import with regards to conversion."
+  },
+  {
+    "title": "OC Tanner",
+    "descr": "With USU BI Group team, analyzed firm’s data to identify new fraud cases using SQL, Tableau, and basic statistical analysis under USU department head’s mentorship. Analysis methods were used as a base for the company's development of a new descriptive fraud detection system."
+  },
+  {
+    "title": "Bonneville Multifamily Capital",
+    "descr": "Constructed dashboards in Tableau using historical income statements that visualize (1) health over time of properties financed by a Utah mortgage company, and (2) outlier properties and key figures."
+  },
+  {
+    "title": "SKPlumber",
+    "descr": "A toolkit for Automated Machine Learning. Supports arbitrarily-shaped ML pipelines and both classification and regression problem types.",
+    "url": "https://github.com/epeters3/skplumber"
+  }
+]
