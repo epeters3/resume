@@ -1,4 +1,14 @@
 {
+  "Paradigms": [
+    { "name": "Machine Learning", "rating": 10 },
+    { "name": "Software Engineering", "rating": 10 },
+    { "name": "Web Development", "rating": 9 },
+    { "name": "Data Analysis", "rating": 9 },
+    { "name": "Data Modeling", "rating": 9 },
+    { "name": "Deep Learning", "rating": 8 },
+    { "name": "Mathematical Modeling", "rating": 7 },
+    { "name": "Statistical Modeling", "rating": 6 }
+  ],
   "Languages": [
     { "name": "Python", "rating": 10 },
     { "name": "Javascript", "rating": 8 },
@@ -25,15 +35,5 @@
     { "name": "Pytorch", "rating": 6 },
     { "name": "Neo4j", "rating": 5 },
     { "name": "Redis", "rating": 5 }
-  ],
-  "Paradigms": [
-    { "name": "Machine Learning", "rating": 10 },
-    { "name": "Web Development", "rating": 10 },
-    { "name": "Software Engineering", "rating": 10 },
-    { "name": "Data Analysis", "rating": 10 },
-    { "name": "Data Modeling", "rating": 10 },
-    { "name": "Mathematical Modeling", "rating": 8 },
-    { "name": "Deep Learning", "rating": 7 },
-    { "name": "Statistical Modeling", "rating": 6 }
   ]
 }
