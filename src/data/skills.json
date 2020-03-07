@@ -1,32 +1,39 @@
 {
   "Languages": [
-    "Python",
-    "Javascript",
-    "Julia",
-    "Java",
-    "HTML",
-    "CSS",
-    "C#",
-    "Matlab",
-    "R",
-    "C++"
+    { "name": "Python", "rating": 10 },
+    { "name": "Javascript", "rating": 8 },
+    { "name": "Java", "rating": 8 },
+    { "name": "Julia", "rating": 7 },
+    { "name": "SQL", "rating": 7 },
+    { "name": "HTML", "rating": 6 },
+    { "name": "CSS", "rating": 6 },
+    { "name": "C#", "rating": 6 },
+    { "name": "R", "rating": 6 },
+    { "name": "Matlab", "rating": 5 },
+    { "name": "C++", "rating": 5 }
   ],
   "Platforms": [
-    "Scikit-Learn",
-    "SQL Server",
-    "MongoDB",
-    "Redis",
-    "Neo4j",
-    "Pytorch",
-    "Keras",
-    "Spring Boot",
-    "React.js"
+    { "name": "Scikit-Learn", "rating": 10 },
+    { "name": "React.js", "rating": 10 },
+    { "name": "Power BI", "rating": 9 },
+    { "name": "SQL Server", "rating": 7 },
+    { "name": "Spring Boot", "rating": 7 },
+    { "name": "Keras", "rating": 7 },
+    { "name": "Tableau", "rating": 7 },
+    { "name": "MongoDB", "rating": 7 },
+    { "name": "Docker", "rating": 6 },
+    { "name": "Pytorch", "rating": 6 },
+    { "name": "Neo4j", "rating": 5 },
+    { "name": "Redis", "rating": 5 }
   ],
   "Paradigms": [
-    "Machine Learning",
-    "Web Development",
-    "Data Analysis",
-    "Data Modeling",
-    "Deep Learning"
+    { "name": "Machine Learning", "rating": 10 },
+    { "name": "Web Development", "rating": 10 },
+    { "name": "Software Engineering", "rating": 10 },
+    { "name": "Data Analysis", "rating": 10 },
+    { "name": "Data Modeling", "rating": 10 },
+    { "name": "Mathematical Modeling", "rating": 8 },
+    { "name": "Deep Learning", "rating": 7 },
+    { "name": "Statistical Modeling", "rating": 6 }
   ]
 }

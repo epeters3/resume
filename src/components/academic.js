@@ -14,12 +14,12 @@ const AcademicItem = ({ title, recognition }) => (
 );
 
 const AcademicsSection = ({ academics }) => (
-  <div>
-    <H2>Academics</H2>
+  <>
+    <H2>Academic Papers</H2>
     {academics.map(({ title, recognition }) => (
       <AcademicItem key={title} title={title} recognition={recognition} />
     ))}
-  </div>
+  </>
 );
 
 export default AcademicsSection;

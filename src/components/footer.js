@@ -6,7 +6,7 @@ import { Code } from "./common";
 import reactIcon from "../icons/react.png";
 
 const Foot = styled.footer`
-  background-color: ${p => p.theme.dark};
+  background-color: ${p => p.theme.lessDark};
   color: white;
   display: flex;
   justify-content: flex-end;

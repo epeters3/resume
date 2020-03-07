@@ -2,37 +2,55 @@ import React from "react";
 import styled from "styled-components";
 
 import { H2 } from "./common";
+import ProgressBar from "./progress";
 
-const Container = styled.div`
+const SkillContainer = styled.div`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: ${p => p.theme.size.xs};
+`;
+
+const ProgressBarContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-
-  & > :not(:last-child):after {
-    content: " |";
-  }
+  align-items: center;
 `;
 
-const Skill = styled.span`
-  margin: 0 ${p => p.theme.size.xs} 0 0;
+const P = styled.p`
+  margin: ${p => p.theme.size.xs} 0;
 `;
 
-const SkillGroup = ({ groupName, skillNames }) => (
+const Skill = ({ name, rating }) => (
+  <SkillContainer>
+    <P>{name}</P>
+    <ProgressBarContainer>
+      <ProgressBar n={rating} />
+    </ProgressBarContainer>
+  </SkillContainer>
+);
+
+const SkillGroup = ({ isFirst, groupName, skills }) => (
   <>
     <H2>{groupName}</H2>
-    <Container>
-      {skillNames.map(name => (
-        <Skill key={name}>{name}</Skill>
-      ))}
-    </Container>
+    {isFirst ? (
+      <i style={{ fontSize: "0.8rem" }}>(All scales are relative)</i>
+    ) : null}
+    {skills.map(({ name, rating }) => (
+      <Skill key={name} name={name} rating={rating} />
+    ))}
   </>
 );
 
 const SkillsSection = ({ skills }) => (
-  <div>
-    {Object.keys(skills).map(gName => (
-      <SkillGroup key={gName} groupName={gName} skillNames={skills[gName]} />
+  <>
+    {Object.keys(skills).map((gName, i) => (
+      <SkillGroup
+        isFirst={i === 0}
+        key={gName}
+        groupName={gName}
+        skills={skills[gName]}
+      />
     ))}
-  </div>
+  </>
 );
 
 export default SkillsSection;

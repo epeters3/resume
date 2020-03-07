@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { WithLink } from "./common";
+
 import linkedin from "../icons/linkedin.png";
 import email from "../icons/email.png";
 import github from "../icons/github.png";
@@ -25,13 +27,6 @@ const contactItems = [
   }
 ];
 
-const Link = styled.a`
-  cursor: ${p => (p.href ? "pointer" : "default")};
-  font-style: italic;
-  text-decoration: ${p => (p.href ? "underline" : "")};
-  color: black;
-`;
-
 const Bar = styled.div`
   display: flex;
   justify-content: space-between;
@@ -52,8 +47,17 @@ const CItem = styled.span`
 
 const ContactItem = ({ src, alt, value, href }) => (
   <CItem>
-    <Icon src={src} alt={alt} />
-    <Link href={href}>{value}</Link>
+    {href ? (
+      <WithLink href={href}>
+        <Icon src={src} alt={alt} />
+        <span>{value}</span>
+      </WithLink>
+    ) : (
+      <>
+        <Icon src={src} alt={alt} />
+        <span>{value}</span>
+      </>
+    )}
   </CItem>
 );
 
