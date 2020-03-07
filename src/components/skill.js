@@ -19,6 +19,10 @@ const P = styled.p`
   margin: ${p => p.theme.size.xs} 0;
 `;
 
+const SkillH2 = styled(H2)`
+  margin-top: ${p => (p.isFirst ? p.theme.size.sm : null)};
+`;
+
 const Skill = ({ name, rating }) => (
   <SkillContainer>
     <P>{name}</P>
@@ -30,7 +34,7 @@ const Skill = ({ name, rating }) => (
 
 const SkillGroup = ({ isFirst, groupName, skills }) => (
   <>
-    <H2>{groupName}</H2>
+    <SkillH2 isFirst={isFirst}>{groupName}</SkillH2>
     {isFirst ? (
       <i style={{ fontSize: "0.8rem" }}>(All scales are relative)</i>
     ) : null}
